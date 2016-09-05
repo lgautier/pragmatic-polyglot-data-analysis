@@ -40,6 +40,8 @@ RUN \
   cd .. && rm -rf llvmlite-0.13.0 && rm v0.13.0.zip && \
   pip3 --no-cache install numba && \
   pip3 --no-cache install findspark && \
+  pip3 --no-cache install jupyter_dashboards && \
+  jupyter dashboards quick-setup --sys-prefix && \
   rm -rf /root/.cache
 
 RUN \
@@ -61,9 +63,6 @@ ENV NB_USER jupyteruser
 ENV SPARK_HOME /opt/spark-2.0.0-bin-hadoop2.7 
 
 WORKDIR /home/$NB_USER/work
-
-RUN pip3 --no-cache install notedown && \
-    rm -rf /root/.cache
 
 USER $NB_USER
 RUN mkdir -p /home/$NB_USER/work
