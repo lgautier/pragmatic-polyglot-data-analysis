@@ -9,7 +9,6 @@ RUN \
   apt-get install -y \
                      ed \
                      git \
-		     llvm-3.8-tools \
 		     libcairo-dev \
 		     libedit-dev \
                      lsb-release \
