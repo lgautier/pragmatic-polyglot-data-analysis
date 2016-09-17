@@ -43,6 +43,8 @@ RUN \
         gridExtra\n\
         plotly\n\
         RSQLite\n\
+        party\n\
+        partykit\n\
         svglite" > rpacks.txt && \
   R -e 'install.packages(sub("(.+)\\\\n","\\1", scan("rpacks.txt", "character")), repos="http://cran.cnr.Berkeley.edu")' && \
   rm rpacks.txt
