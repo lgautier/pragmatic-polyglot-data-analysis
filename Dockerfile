@@ -22,13 +22,7 @@ RUN \
   tar -xzf spark-2.0.0-bin-hadoop2.7.tgz && \
   mv spark-2.0.0-bin-hadoop2.7 /opt/ && \
   rm spark-2.0.0-bin-hadoop2.7.tgz
-  
-  
-# Add CRAN repository
-#RUN \
-#  apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9 && \
-#  echo "deb http://cran.cnr.Berkeley.edu/bin/linux/ubuntu `lsb_release -a | gre#p Codename | awk '{print $2}'`/" >> /etc/apt/sources.list
-
+    
 RUN \
   pip3 --no-cache-dir install wheel --upgrade && \
   pip3 --no-cache-dir install sqlalchemy && \
