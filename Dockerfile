@@ -39,17 +39,11 @@ RUN \
   rm -rf /root/.cache
 
 RUN \
-  echo "broom\n\
-        dplyr\n\
-        hexbin\n\
-        glmnet\n\
-        ggplot2\n\
+  echo "glmnet\n\
         gridExtra\n\
-        lme4\n\
         plotly\n\
         RSQLite\n\
-        svglite\n\
-        tidyr" > rpacks.txt && \
+        svglite" > rpacks.txt && \
   R -e 'install.packages(sub("(.+)\\\\n","\\1", scan("rpacks.txt", "character")), repos="http://cran.cnr.Berkeley.edu")' && \
   rm rpacks.txt
 
