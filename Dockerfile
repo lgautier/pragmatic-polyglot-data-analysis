@@ -41,6 +41,7 @@ RUN \
 RUN \
   echo "glmnet\n\
         gridExtra\n\
+        maps\n\
         plotly\n\
         RSQLite\n\
         party\n\
