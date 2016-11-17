@@ -17,7 +17,7 @@ To start a Jupyter notebook:
 
 ```bash
 
-docker run -p 8888:8888 --rm lgautier/pragmatic-polyglot-analysis
+docker run -p 8888:8888 --rm lgautier/pragmatic-polyglot-data-analysis
 
 ```
 
@@ -37,6 +37,6 @@ docker run -p 8888:8888 \
            --rm \
            -u $(id -u):$(id -g) \
            -v `pwd`:/home/jupyteruser/work \
-           lgautier/pragmatic-polyglot-analysis
+           lgautier/pragmatic-polyglot-data-analysis
 
 ```
