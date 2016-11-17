@@ -36,7 +36,7 @@ working directory.
 docker run -p 8888:8888 \
            --rm \
            -u $(id -u):$(id -g) \
-	   -v `pwd`:/home/jupyteruser/work
+           -v `pwd`:/home/jupyteruser/work
            lgautier/pragmatic-polyglot-analysis
 
 ```
