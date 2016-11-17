@@ -18,10 +18,10 @@ RUN \
   rm -rf /var/lib/apt/lists/*
 
 RUN \
-  wget --progress=bar http://mirrors.ocf.berkeley.edu/apache/spark/spark-2.0.0/spark-2.0.0-bin-hadoop2.7.tgz && \
-  tar -xzf spark-2.0.0-bin-hadoop2.7.tgz && \
-  mv spark-2.0.0-bin-hadoop2.7 /opt/ && \
-  rm spark-2.0.0-bin-hadoop2.7.tgz
+  wget --progress=bar http://mirrors.ocf.berkeley.edu/apache/spark/spark-2.0.2/spark-2.0.2-bin-hadoop2.7.tgz && \
+  tar -xzf spark-2.0.2-bin-hadoop2.7.tgz && \
+  mv spark-2.0.2-bin-hadoop2.7 /opt/ && \
+  rm spark-2.0.2-bin-hadoop2.7.tgz
     
 RUN \
   pip3 --no-cache-dir install wheel --upgrade && \
