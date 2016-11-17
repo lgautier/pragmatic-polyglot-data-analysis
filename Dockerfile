@@ -54,9 +54,7 @@ RUN \
 ENV NB_USER jupyteruser
 ENV SPARK_HOME /opt/spark-2.0.0-bin-hadoop2.7 
 
-WORKDIR /home/$NB_USER/work
-
 USER $NB_USER
 RUN mkdir -p /home/$NB_USER/work
 
-CMD jupyter notebook --no-browser
+WORKDIR /home/$NB_USER/work
