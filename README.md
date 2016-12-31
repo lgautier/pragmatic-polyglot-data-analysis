@@ -7,7 +7,9 @@ Base Docker container to perform data analysis using:
 - R
 - Spark (able to run a local spark session)
 
-The container is based on rpy2's container: it can run standalone on a single machine, making it well-suited for teaching, learning, or experimenting with the jupyter notebook work off-the-shelf. The container is used in workshops about
+The container is based on rpy2's container: it can run standalone on a single machine, making it well-suited for teaching, learning, or experimenting with the jupyter notebook work off-the-shelf. 
+
+Minimal examples of jupyter notebooks are in the directory [notebooks](notebooks/). The container is used in workshops about
 polyglot approaches to the analysis of data (https://github.com/lgautier/odsc-ppda-slides or https://github.com/lgautier/jpd-pdapr-slides), or as an off-the-shelf solution to reproduce an analysis of data in
 a jupyter notebook (https://github.com/lgautier/project-tycho-utilities/blob/master/notebook/measles_and_diphteria.ipynb).
 
