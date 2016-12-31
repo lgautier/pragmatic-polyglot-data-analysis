@@ -22,10 +22,11 @@ docker run -p 8888:8888 --rm lgautier/pragmatic-polyglot-data-analysis
 
 ```
 
-2. Point a web browser to `http://localhost:8888`
+2. Point a web browser to the URL
+
+When running the Docker command a jupyter notebook will be started in the container. At the time of writing a token-based security setting is activated by default and the URL to use will be found in the output printed in the terminal (it will look like `http://localhost:8888?token=<sequence of digits>`).
 
 **Note:** Our docker container is running with a non-root user `jupyteruser`.
-
 
 Persistance of the work is highly desirable in many situations, and we can achieve it by mapping the host's user and group IDs with the IDs in the container. The following
 will start a jupyter notebook server that has access to the current working directory on the host. **Note:** check the jupyter notebook and docker security models,
